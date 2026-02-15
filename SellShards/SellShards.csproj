@@ -27,6 +27,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="..\languages\en.json" Link="Deployment\en.json" />
+    <Content Include="..\thunderstore\icon.png" Link="Deployment\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
