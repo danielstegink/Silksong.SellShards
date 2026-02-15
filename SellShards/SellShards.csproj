@@ -26,10 +26,6 @@
     <!--<DllPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight Silksong\Hollow Knight Silksong_Data\Managed</DllPath>-->
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="..\languages\en.json" Link="Deployment\en.json" />
-    <Content Include="..\thunderstore\icon.png" Link="Deployment\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
     <PackageReference Include="HarmonyX" Version="2.9.0" />
@@ -60,10 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="../README.md" Pack="True" PackagePath="README.md" Link="Deployment\README.md" />
+    <None Include="../thunderstore/icon.png" Pack="True" PackagePath="icon.png" Link="Deployment\icon.png" />
     <None Include="..\.github\workflows\build-publish.yml" Link="Deployment\build-publish.yml" />
     <None Include="..\CHANGELOG.md" Link="Deployment\CHANGELOG.md" />
     <None Include="..\Directory.Build.props" Link="Deployment\Directory.Build.props" />
     <None Include="..\thunderstore\thunderstore.toml" Link="Deployment\thunderstore.toml" />
+    <None Include="..\languages\en.json" Link="Deployment\en.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Deployment\" />
