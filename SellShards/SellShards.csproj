@@ -23,7 +23,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <DllPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight Silksong\Hollow Knight Silksong_Data\Managed</DllPath>
+    <!--<DllPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight Silksong\Hollow Knight Silksong_Data\Managed</DllPath>-->
   </PropertyGroup>
   <ItemGroup>
     <Content Include="..\languages\en.json" Link="Deployment\en.json" />
@@ -39,7 +39,6 @@
   <ItemGroup Condition="'$(DllPath)' == ''">
     <PackageReference Include="Silksong.GameLibs" Version="*-*" Publicize="false" />
     <PackageReference Include="UnityEngine.Modules" Version="6000.0.50" IncludeAssets="compile" Publicize="false" />
-    <PackageReference Include="Silksong.FsmUtil" Version="0.3.3" />
   </ItemGroup>
   <ItemGroup Condition="'$(DllPath)' != ''">
     <Reference Include="Assembly-CSharp">
