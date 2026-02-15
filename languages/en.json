@@ -1,0 +1,8 @@
+{
+	"SHARD_NAME": "Shard Cost",
+	"SHARD_DESC": "The number of shards required to trade",
+	"ROSARY_NAME": "Rosaries",
+	"ROSARY_DESC": "The number of rosaries given per trade",
+	"FLICK_SELL_PROMPT": "Don't suppose you got some shards left, miss? There's a lotta work to do 'round here.",
+	"YES_NO": "Exchange Shell Shards for Rosaries?"
+}
